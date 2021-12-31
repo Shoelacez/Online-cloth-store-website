@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Styling -->
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin: 8px;
+        }
+        
+        .about-section {
+          padding: 50px;
+          text-align: center;
+          background-color: #474e5d;
+          color: white;
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .button:hover {
+          background-color: #555;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        </style>
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="prods/allproducts.html">All Products</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <!-- About -->
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>
+            There is nothing much to see here dude you just got to go and check out your Cart
+        </p>
+        <br>
+        <p>
+            All we need from you is your money we cant lie to you about that
+            and don't forget to subscribe to my youtube chanel in case you fell like our suits ain't as cool as your ex
+        </p>
+        <p>For detailed info about our company  <a href="Our Company/index.html" style="color: white;"> VISIT PAGE</a></p>
+      </div>
+      
+      <h2 style="text-align:center">Meet Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="assets/img/suit10.jfif" alt="CEO" style="width:100%">
+            <div class="container">
+              <h2>Alpha Joseph</h2>
+              <p class="title">CEO & Founder</p>
+              <p>In case they don't reply, let me know</p>
+              <p>josephalpha@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="assets/img/suit12.jfif" alt="Ass CEO" style="width:100%">
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>The guy who replaced the company's dead designer</p>
+              <p>mike@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="assets/img/suit9.jfif" alt="Just a Nobody" style="width:100%">
+            <div class="container">
+              <h2>Peter Nasson</h2>
+              <p class="title">Designer</p>
+              <p>john@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  
+</body>
+</html>
