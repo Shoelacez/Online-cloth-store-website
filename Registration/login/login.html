@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact us</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <section class="largest_section">
+        <div class="form">
+            <form  action="../prods/logged-in.html" id="DetailsForm" onsubmit="return checkDetails()">
+                  <h1>Log In</h1>
+
+                  <label for="first">Username</label>
+                  <input type="text" id="first" placeholder="Username/UserID" oninput="this.setCustomValidity('')">
+
+                  <label for="password">Password</label>
+                  <input type="password" id="password" minlength="8"  oninput="this.setCustomValidity('')">
+
+
+                  <button type="submit">Submit form</button>
+                  <button type="reset">Reset form</button>
+            </form>
+      </div>
+    </section>
+    <!-- <footer class="copyright"> Copyright &copy; 2021 ajkitundu </footer> -->
+
+</body>
+
+</html>

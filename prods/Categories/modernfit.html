@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assest/style.css">
+  <link rel="stylesheet" href="../../style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <title>Cloth Shop</title>
+
+  <style>
+    .dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+
+<body>
+  <header>
+      <nav>
+        <div class="container">
+          <div class="nav-content">
+          <div class="logo">
+            <img src="../../assets/img/brand_logo.jpg" alt="logo" width="70px">
+          </div>     
+            <h2>MODERN FIT SUITS</h2>
+            
+          <!-- Nav bar -->
+            <ul>
+              <li><a class="active" href="../../index.html">Home</a></li>
+              <li><a href="../../prods/allproducts.html">All Products</a></li>
+              <li><a href="../../news.html">News</a></li>
+              <li><a href="../../contact.html">Contact</a></li>
+              <li><a href="../../about.html">About</a></li>
+            </ul>
+            <div class="dropdown">
+              <button class="dropbtn">Categories</button>
+              <div class="dropdown-content">
+                <a href="slimfitsuit.html">Slim Fit Suit</a>
+                <a href="modernfit.html">modern Fit Suit</a>
+                <a href="tuxedos.html">Tuxedo</a>
+                <a href="../../other products/shoes.html">Shoes</a>
+                <a href="../../other products/shirts.html">Shirts</a>
+                <a href="../../other products/ties.html">Ties</a>
+              </div>
+            </div>
+
+            <div class="buy-menu">
+              <ul>
+                <li class="submenu">
+                  <i class="fas fa-shopping-cart"></i>
+                    <div class="shopping-cart">
+                      <table id="cart-content" class="">
+                        <thead>
+                          <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th class="Delete">Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody></tbody>
+                      </table>
+                      <a href="#" id="clear-cart">Clear All</a>
+                    </div>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <div class="hero">
+          <img src="../../assets/img/our_office.jpg" alt="">
+          <h1>LOOK LIKE A GENT with US</h1>
+        </div>
+  </header>
+    
+
+
+  <section class="shop" id="shop">
+    <div class="container">
+      <h1>MODERN FIT SUITS</h1>
+      <div id="shopping-cart">
+        <div class="row">
+          <div class="cart">
+            <img src="../../assets/img/tux1.jpg" alt="">
+            <div class="info-cart">
+              <h4>Blue Tux</h4>
+              <p>705</p>
+              <p>$150</p>
+              <a class="add-to-card" href="#" data-id="1">Add To Cart</a>
+            </div>
+          </div>
+          <div class="cart">
+            <img src="../../assets/img/tux2.jpg" alt="">
+            <div class="info-cart">
+              <h4>Black Tuxedo</h4>
+              <p>X,XXL</p>
+              <p>$150</p>
+              <a class="add-to-card" href="#" data-id="1">Add To Cart</a>
+            </div>
+          </div>
+          <div class="cart">
+            <img src="../../assets/img/tux3.jpg" alt="">
+            <div class="info-cart">
+              <h4>Blue Vintage</h4>
+              <p>Very Rare</p>
+              <p>$130</p>
+              <a class="add-to-card" href="#" data-id="2">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cart">
+            <img src="../../assets/img/tux4.jpg" alt="">
+            <div class="info-cart">
+              <h4>Vascular Prime Suit</h4>
+              <p>X,XXL</p>
+              <p>$299</p>
+              <a class="add-to-card" href="#" data-id="3">Add To Cart</a>
+            </div>
+          </div>
+          <div class="cart">
+            <img src="../../assets/img/tux5.jpg" alt="">
+            <div class="info-cart">
+              <h4>Dark Vue Tuxedo c93</h4>
+              <p>M,S,2XL</p>
+              <p>$499</p>
+              <a class="add-to-card" href="#" data-id="4">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="cart">
+            <img src="../../assets/img/tux6.jpg" alt="">
+            <div class="info-cart">
+              <h4>Chill Grey v3</h4>
+              <p>M,S,X,XXL</p>
+              <p>$349</p>
+              <a class="add-to-card" href="#" data-id="4">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="assest/main.js"></script>
+</body>
+</html>
+
+

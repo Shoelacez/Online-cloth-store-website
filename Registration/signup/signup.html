@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact us</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="signup.css">
+    <!-- <link rel="stylesheet" href="styles/print.css" media="print"> -->
+    <script src="signup.js"></script>
+</head>
+
+<body>
+    <section class="largest_section">
+        <div class="form">
+            <form   id="DetailsForm" onsubmit="return checkDetails()">
+                  <h1>Sign Up</h1>
+
+                  <label for="first">Username</label>
+                  <input type="text" id="first" placeholder="Username/UserID" oninput="this.setCustomValidity('')">
+
+                  <label for="email">Email</label>
+                  <input type="email" id="email" oninput="this.setCustomValidity('')">
+
+                  <label for="phone">Phone</label>
+                  <input type="tel" pattern="[0-9]{11}"  id="phone" oninput="this.setCustomValidity('')">
+
+                  <label for="password">Password</label>
+                  <input type="password" id="password" minlength="8"  oninput="this.setCustomValidity('')">
+
+                  <label for="conpassword">Confirm Password</label>
+                  <input type="password" id="conpassword"  minlength="8" oninput="this.setCustomValidity('')">
+                  
+                  <button type="submit">Submit form</button>
+                  <button type="reset">Reset form</button>
+            </form>
+      </div>
+    </section>
+    <footer class="copyright"> Copyright &copy; 2021 ajkitundu </footer>
+
+</body>
+
+</html>
