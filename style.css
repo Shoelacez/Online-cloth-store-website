@@ -1,0 +1,208 @@
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+body{
+  font-family: Raleway;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --dark-grey: #181818;
+  --grey: #474747;
+  --light-grey: #ebe9ea;
+  --light: #f6f6f6;
+}
+
+html {
+  background-color: var(--light);
+}
+
+.bg-black {
+  background-color: var(--dark-grey);
+  color: var(--light);
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+}
+.banner_container {
+  max-width: 1200px;
+  margin: 0 80px;
+}
+
+.container-center {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-center .title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* ===== Banner ===== */
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.6)),
+    url("https://suitshop.com/static/d231e396533424d07aca910255169ada/901c3/NAVY_BLUE_SUIT__075_d39d02b0-896a-40e7-a12e-bb6ef585c100.jpg");
+
+  /* fazendo a imagem ocupar a largura toda da tela */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 50vh; /* tamanho que vai ocupar */
+
+  color: var(--light);
+  font-weight: 500;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.6));
+
+  /* fazendo a imagem ocupar a largura toda da tela */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 50vh; /* tamanho que vai ocupar */
+
+  color: var(--light);
+  font-weight: 500;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner .banner-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.banner .banner-description {
+  max-width: 25.245rem;
+  line-height: calc(1 * 1.8rem);
+}
+
+
+.banner-description::after {
+  content: "|";
+  opacity: 1;
+  animation: pisca 0.7s infinite;
+}
+
+@keyframes pisca {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.destaques-title {
+  margin: 2rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.destaques-description {
+  margin-bottom: 3.72rem;
+}
+
+/* ===== Images ===== */
+.grid-img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 2rem 1rem; */
+}
+
+.wrapper-item {
+  background: var(--light-grey);
+  padding: 4.68rem 0;
+}
+
+.wrapper-item :hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 6.25rem;
+}
+
+/*====== Media Queries ======*/
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 90%;
+  }
+
+  .grid {
+    max-width: 992px;
+    margin: 0 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 86%;
+  }
+
+  .grid {
+    max-width: 350px;
+    grid-template-columns: 1fr;
+  }
+}
